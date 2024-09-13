@@ -1,11 +1,25 @@
 <!DOCTYPE html>
+
+
 <html>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="app.js"></script>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>hello coursera</title>
+	<style>body { font-size: 1.5m }</style>
+	<title>Name Calculator</title>
 </head>
-<body>
-<h1>Hello coursera Teacher</h1>
+<body ng-app="NameCalculator">
+<h1>Name Calculator</h1>
+<div ng-controller="NameCalculatorController">
+	<div>
+		Your name :
+		<input type="text" ng-model="name" ng-keyup="displayNumeric()">
+	</div>
+	<div>Total Numeric Value of person's name is:{{totalValue}} </div>
+	{{name}}
+</div>
 </body>
 </html>
+
