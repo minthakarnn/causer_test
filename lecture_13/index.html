@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='MsgApp'>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="app.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style> body {font-size: 1.2em;}</style>
+	<title>Expresssion And Interpolation</title>
+</head>
+<body>
+<h1>Expresssion And Interpolation</h1>
+<div ng-controller = 'MsgController'>Message is : {{name}}
+<br>has message for you : {{sayMessage()}} <br>
+Loves : {{sayLovesMessage ()}} <br>
+Truth : {{sayLovesMessage () | truth : 'spirit' : 'lazwip'}} <br>
+BigTruth : {{sayLovesMessage () | truth : 'spirit' : 'lazwip' | uppercase}}
+
+<div>
+	<button ng-click= "favme()">fav anime</button>
+	Cost : {{ cookieCost | currency : "#blah!!" : 4}}
+	<br>
+	<img ng-src="favme_{{stateOfBeing}}.png">
+</div>
+</div>
+</body>
+</html>
