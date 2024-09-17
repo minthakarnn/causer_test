@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="BindingApp">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="app.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>body{font-size: 1.2em}</style>
+	<title>2-way,1-way,1-way</title>
+</head>
+<body>
+	<h1>2-way,1-way,1-way</h1>
+	<div ng-controller="BindingController">
+		<button ng-click = "showNumberOfWatchers()">Log # of watchers</button>
+		<button ng-click = "setFullName()">Set Full Name</button><br>
+
+		Full name is : {{ :: fullName }}<br>
+		<button ng-click = "logFirstName()">Log first name</button><br>
+		<button ng-click = "logFullName()">Log full name</button><br>
+
+		<div>
+			<input type="text" ng-model="firstName">
+		</div>
+	</div>
+
+</body>
+</html>
