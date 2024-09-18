@@ -8,7 +8,7 @@
 
 	config.$inject = ['ShoppingListServiceProvider']
 	function config(ShoppingListServiceProvider) {
-		// body...
+		ShoppingListServiceProvider.defaults.maxItems = 2
 	}
 
 	// Controller 1
