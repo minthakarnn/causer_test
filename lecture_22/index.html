@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="ControllerAsApp"> <!-- Use the correct module name here -->
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="app.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>body{font-size: 1.2em}</style>
+	<title>Custom Service Through a Provider</title>
+</head>
+<body>
+	<h1>Custom Service Through a Provider</h1>
+	<div id="list1" ng-controller="ShoppingListController1 as list1">
+		<h3>Shopping List</h3>
+		<input type="text" ng-model="list1.itemName" placeholder="item name">
+		<input type="text" ng-model="list1.itemQuantity" placeholder="quantity">
+		<button ng-click="list1.addItem()">Add Item To Shopping List</button>
+		<ol>
+			<li ng-repeat="item in list1.items">
+				{{item.quantity}} of {{item.name}}
+				<button ng-click="list1.removeItem($index)">Remove Item</button>
+			</li>
+		</ol>
+		<div class="error">Error: {{list1.errorMessage}}</div>
+	</div>
+</body>
+</html>
