@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ShoppingListApp"> <!-- Use the correct module name here -->
+<html ng-app="ShoppingListApp">
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src="app.js"></script>
@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h1>Custom Service Through a Provider</h1>
-	<div id="list" ng-controller="ShoppingListController1 as list">
+	<div ng-controller="ShoppingListController1 as list">
 		<h3>Shopping List</h3>
 		<input type="text" ng-model="list.itemName" placeholder="item name">
 		<input type="text" ng-model="list.itemQuantity" placeholder="quantity">
