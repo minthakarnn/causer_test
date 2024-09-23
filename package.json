@@ -1,0 +1,18 @@
+{
+  "name": "causer_test",
+  "version": "1.0.0",
+  "description": "test course repo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors-anywhere": "^0.4.4",
+    "express": "^4.21.0",
+    "node": "^22.9.0"
+  }
+}
