@@ -1,0 +1,10 @@
+<h4>{{ list.title }} ({{ list.items.length }} items)</h4>
+<ol>
+	<li ng-repeat="item in list.items">
+		<list-item-description></list-item-description>
+		<button ng-click="list.removeItem($index)">Remove Item</button>
+	</li>
+</ol>
+<div ng-if="list.containsCookies()">
+	<p>Warning: This list contains cookies!</p>
+</div>
